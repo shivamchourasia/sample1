@@ -18,8 +18,8 @@ def filehandle(var):
 		dict[var]=var1
 #	v1=dict[var]
 		f=open("testing.txt","ab")
-		pickle.dump("\n"+var+" "+":")
-		pickle.dumps(str(dict[var]))
+		pickle.dump("\n"+var+" "+":",f)
+		pickle.dumps(str(dict[var]),f)
 		print(var,":",dict[var])
 		f.close
 var1=1
